@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  font-family: "Poppins", "sans-serif";
+}
+
+.single-page {
+  padding-bottom: 40px;
+}
+
+.single-pr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  background-color: red;
+  color: white;
+}
+
+.single-pr a {
+  text-decoration: none;
+  color: white;
+}
+
+.single-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 50px;
+  gap: 20px;
+}
+
+.card-left {
+  width: 50%;
+  background-color: rgb(211, 211, 211);
+  border-radius: 75px;
+}
+
+.card-left img {
+  width: 100%;
+}
+
+.card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+
+.card-info span {
+  color: red;
+  font-weight: 400;
+}
+
+.card-line {
+  border: 1px solid rgb(198, 198, 198);
+  width: 600px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.card-info h1 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.card-price-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.card-price-1 h2 {
+  color: red;
+}
+
+.card-price-1 h4 {
+  color: grey;
+  text-decoration: line-through;
+}
+
+.card-weight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+
+.card-item {
+  border: 1px solid;
+  padding: 10px;
+  font-size: 16px;
+  color: solid;
+  border-radius: 15px;
+}
+
+.card-item-1 {
+  background-color: red;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  border-radius: 15px;
+  border: 2px solid red;
+}
+
+.card-buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.card-buy h4 {
+  border: 1px solid grey;
+  padding: 10px 15px;
+  color: grey;
+  border-radius: 10px;
+}
+
+.card-buy button {
+  padding: 10px 15px;
+  color: white;
+  background-color: red;
+  border: 2px solid red;
+}
