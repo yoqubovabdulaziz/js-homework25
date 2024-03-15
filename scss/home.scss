@@ -39,6 +39,69 @@ a {
   text-decoration: none;
 }
 
+// LOGOUT START
+
+.logout__question {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px);
+  z-index: 10000;
+  display: none;
+  &__box {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 62, 50);
+    text-align: center;
+    gap: 20px;
+    border-radius: 8px;
+    .fa-xmark {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 20px;
+      color: white;
+      cursor: pointer;
+    }
+    p {
+      font-size: 20px;
+      color: #fff;
+      font-family: "Poppins", "sans-serif";
+      font-weight: 400;
+    }
+    .logout__buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    button {
+      width: 70px;
+      padding: 10px;
+      border-radius: 4px;
+      font-family: "Poppins", "sans-serif";
+      font-weight: 600;
+    }
+  }
+}
+
+.logout__question.show__logout__question {
+  display: flex;
+}
+
+// LOGOUT END
+
 // HEADER START
 
 nav {
@@ -125,7 +188,6 @@ nav {
       max-width: 600px;
       width: 100%;
       height: 45px;
-      background-color: red;
       border: 1px solid rgb(100, 180, 150);
       border-radius: 5px;
       background: rgb(255, 255, 255);
@@ -181,7 +243,9 @@ nav {
       display: flex;
       align-items: center;
       gap: 30px;
-      div {
+      .navbar__account,
+      .navbar__favorite,
+      .navbar__cart {
         display: flex;
         gap: 8px;
         align-items: center;
@@ -198,6 +262,18 @@ nav {
           @media (max-width: 950px) {
             display: none;
           }
+        }
+      }
+      .navbar__logout {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 12px;
+        background-color: rgb(245, 62, 50);
+        color: white;
+        border-radius: 4px;
+        i {
+          font-size: 16px;
         }
       }
     }
